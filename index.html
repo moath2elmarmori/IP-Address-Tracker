@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>IP Address Tracker</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js"></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- start header   -->
+
+    <header>
+      <h1>IP Address Tracker</h1>
+      <div class="form-container">
+        <form action="#" id="the-form">
+          <div class="label-container">
+            <input
+              type="text"
+              placeholder="Search for an IP Address"
+              id="ip-input"
+            />
+            <button>></button>
+          </div>
+        </form>
+      </div>
+      <div class="status-container">
+        <div class="status-col">
+          <p>IP ADDRESS</p>
+          <h4 id="ip-text">-</h4>
+        </div>
+        <div class="status-col">
+          <p>LOCATION</p>
+          <h4 id="location-text">-</h4>
+        </div>
+        <div class="status-col">
+          <p>TIMEZONE</p>
+          <h4 id="timezone-text">-</h4>
+        </div>
+        <div class="status-col">
+          <p>ISP</p>
+          <h4 id="isp-text">-</h4>
+        </div>
+      </div>
+    </header>
+    <!-- end header   -->
+    <!-- start map -->
+    <div id="map" style="width: 100%; height: 500px"></div>
+    <!-- end map -->
+  </body>
+</html>
